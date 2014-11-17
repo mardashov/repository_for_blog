@@ -1,0 +1,10 @@
+ul
+  -@posts.each do |post|
+    li
+      dl
+        dt Имя автора
+        dd = post.author_name
+        dt Заголовок
+        dd = post.title
+        dt Контент
+        dd = post.content.truncate(100)
