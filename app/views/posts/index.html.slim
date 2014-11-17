@@ -4,7 +4,8 @@ ul
       dl
         dt Имя автора
         dd = post.author_name
-        dt Заголовок
-        dd = post.title
+        dt Заголовок 
+        dd = link_to post.title, post
         dt Контент
         dd = post.content.truncate(100)
+
